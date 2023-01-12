@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_post_posts",
+  "info": {
+    "displayName": "Post"
+  },
+  "options": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "required": true
+    },
+    "Subtitulo": {
+      "type": "string"
+    },
+    "Contenido": {
+      "type": "richtext"
+    }
+  }
+}
