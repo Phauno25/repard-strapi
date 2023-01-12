@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: strapi-postgres
+    name: strapi
     env: node
     plan: starter
     buildCommand: yarn install && yarn build
@@ -8,11 +8,11 @@ services:
     healthCheckPath: /_health
     disk:
       name: strapi-uploads
-      mountPath: /repard-strapi/src/public/uploads
+      mountPath: /opt/render/project/src/public/uploads
       sizeGB: 1
     envVars:
       - key: NODE_VERSION
-        value: 12.22.0
+        value: 16.17.1
       - key: NODE_ENV
         value: production
       - key: DATABASE_URL
@@ -27,3 +27,7 @@ services:
         generateValue: true
       - key: API_TOKEN_SALT
         generateValue: true
+
+databases:
+  - name: postgres
+    plan: starter
