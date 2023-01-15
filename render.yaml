@@ -16,13 +16,13 @@ services:
       - key: NODE_ENV
         value: production
       - key: DATABASE_URL
-        value: postgresql://postgres:iG9Wy80HX25gJxRG@db.qpugbbffinpgedsstjnk.supabase.co:5432/postgres
+        value: postgresql://postgres:pablokevinrepard@db.etmgkqrhwzzdsorlktce.supabase.co:5432/postgres
       - key: JWT_SECRET
-        generateValue: false
+        generateValue: true
       - key: ADMIN_JWT_SECRET
-        generateValue: false
+        generateValue: true
       - key: APP_KEYS
-        generateValue: false
+        generateValue: true
       - key: API_TOKEN_SALT
-        generateValue: false
+        generateValue: true
 
